@@ -16,7 +16,7 @@
   justify-content: space-between;
   position: relative;
   height: 100%;
-  padding: 0 2rem;
+  padding: 0 0.75rem;
 }
 
 .header__container {
@@ -1010,7 +1010,6 @@
 }
 
 .hero__wrapper_contact {
-  margin-top: calc(88px + 1rem);
   min-height: 90vh;
 }
 
@@ -2016,9 +2015,6 @@
     padding: 15px 25px;
   }
 
-  .navbar__info {
-    display: none;
-  }
 }
 
 @media (max-width: 1280px) {
@@ -2058,7 +2054,7 @@
     background: linear-gradient(180deg, #b8d3fc 0%, #ffffff 100%);
     min-height: 250px;
   }
-  
+
   .footer__container {
     flex-wrap: wrap;
     gap: 30px;
@@ -2373,8 +2369,12 @@
     font-size: 40px;
   }
 
-  .navbar__buttons {
+  .navbar__links>a:not(:last-child) {
     display: none;
+  }
+
+  .navbar__burger_btn {
+    order: -1;
   }
 
   .navbar__info_location {
@@ -2501,7 +2501,7 @@
     width: 100%;
     transform: translateX(-10px);
   }
-  
+
   .reasons__cards_content {
     background: none;
     padding: 0;
